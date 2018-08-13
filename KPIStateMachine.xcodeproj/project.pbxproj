@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E26906D21216C99009DD510 /* KPIStates.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E26906C21216C99009DD510 /* KPIStates.m */; };
 		2EF2B6F0211F1D930060074B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EF2B6EF211F1D930060074B /* AppDelegate.m */; };
 		2EF2B6F3211F1D930060074B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EF2B6F2211F1D930060074B /* ViewController.m */; };
 		2EF2B6F6211F1D930060074B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EF2B6F4211F1D930060074B /* Main.storyboard */; };
@@ -27,6 +28,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2E26906B21216C99009DD510 /* KPIStates.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KPIStates.h; sourceTree = "<group>"; };
+		2E26906C21216C99009DD510 /* KPIStates.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KPIStates.m; sourceTree = "<group>"; };
 		2EF2B6EB211F1D930060074B /* KPIStateMachine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KPIStateMachine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2EF2B6EE211F1D930060074B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		2EF2B6EF211F1D930060074B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -81,6 +84,8 @@
 		2EF2B6ED211F1D930060074B /* KPIStateMachine */ = {
 			isa = PBXGroup;
 			children = (
+				2E26906B21216C99009DD510 /* KPIStates.h */,
+				2E26906C21216C99009DD510 /* KPIStates.m */,
 				2EF2B6EE211F1D930060074B /* AppDelegate.h */,
 				2EF2B6EF211F1D930060074B /* AppDelegate.m */,
 				2EF2B6F1211F1D930060074B /* ViewController.h */,
@@ -205,6 +210,7 @@
 			files = (
 				2EF2B6F3211F1D930060074B /* ViewController.m in Sources */,
 				2EF2B6FE211F1D940060074B /* main.m in Sources */,
+				2E26906D21216C99009DD510 /* KPIStates.m in Sources */,
 				2EF2B6F0211F1D930060074B /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
