@@ -8,29 +8,56 @@
 
 #import "KPIStates.h"
 
+
+@interface KPIStates()
+@property(nonatomic, readwrite,  assign) KPIFloor currentFloor;
+
+
+@end
+
 @implementation KPIStates
-typedef NS_OPTIONS(NSUInteger, KPIStateSize) {
-    KPIStateSizeNone                 = 0,
-    KPIStateSizePartTimeJob          = 1 << 0,
-    KPIStateSizeFullTimeJob          = 1 << 1,
-    KPIStateSizeJunior               = 1 << 2,
-    KPIStateSizeProduction           = 1 << 3,
-    KPIStateSizeB1EnglishLevel       = 1 << 4,
-    KPIStateSizeB2EnglishLevel       = 1 << 5,
-    KPIStateSizeMiddle               = 1 << 6,
-    KPIStateSizeSenior               = 1 << 7,
-    KPIStateSizeLid                  = 1 << 8
-};
 
-
-typedef NS_ENUM(NSUInteger, KPIEvent){
-    KPIEvent1,
-    KPIEvent2,
-    KPIEvent3,
-    KPIEvent4,
-    KPIEvent5,
-    KPIEvent6
+-(instancetype) initWithPol:(Pol) pol{
+    self = [super init];
     
-};
+    if (self) {
+        _currentFloor = first;
+        _yourPol = pol;
+    }
+    return  self;
+}
+
+-(void) performEvent:(KPIEvent) event{
+    if (_currentFloor == sorry || _currentFloor == congratulations) {
+        return;
+    }
+    if (((event == stop || event == toNextFloor) && _yourPol == zhen && self.currentFloor < tenth) || (_yourPol == myzh && event == toNextFloor && _currentFloor < fourth)) {
+            self.currentFloor++;
+        NSLog(@"nextFloor");
+    }
+    
+    if (self.currentFloor == tenth && self.yourPol == zhen) {
+        self.currentFloor = sorry;
+        if (self.currentFloor == sorry) {
+            NSLog(@"sorry");
+        }
+        return;
+    }
+    
+    if (self.yourPol == myzh && event == stop) {
+        self.currentFloor = congratulations;
+        NSLog(@"our congratulations!!!");
+        return;
+    }
+    
+    if (self.yourPol == myzh && self.currentFloor >= fourth) {
+        self.currentFloor = congratulations;
+        NSLog(@"thet's enough, our congratulations!!!");
+        return;
+    }
+    
+    
+}
+
 
 @end

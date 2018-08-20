@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2E26906D21216C99009DD510 /* KPIStates.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E26906C21216C99009DD510 /* KPIStates.m */; };
+		2EB5F3DC2124E646009EFA00 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2EB5F3DB2124E646009EFA00 /* Default-568h@2x.png */; };
 		2EF2B6F0211F1D930060074B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EF2B6EF211F1D930060074B /* AppDelegate.m */; };
 		2EF2B6F3211F1D930060074B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EF2B6F2211F1D930060074B /* ViewController.m */; };
 		2EF2B6F6211F1D930060074B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EF2B6F4211F1D930060074B /* Main.storyboard */; };
@@ -30,6 +31,7 @@
 /* Begin PBXFileReference section */
 		2E26906B21216C99009DD510 /* KPIStates.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KPIStates.h; sourceTree = "<group>"; };
 		2E26906C21216C99009DD510 /* KPIStates.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KPIStates.m; sourceTree = "<group>"; };
+		2EB5F3DB2124E646009EFA00 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		2EF2B6EB211F1D930060074B /* KPIStateMachine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KPIStateMachine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2EF2B6EE211F1D930060074B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		2EF2B6EF211F1D930060074B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -63,9 +65,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2EB5F3DA2124E268009EFA00 /* not used */ = {
+			isa = PBXGroup;
+			children = (
+				2EF2B6EE211F1D930060074B /* AppDelegate.h */,
+				2EF2B6EF211F1D930060074B /* AppDelegate.m */,
+				2EF2B6F1211F1D930060074B /* ViewController.h */,
+				2EF2B6F2211F1D930060074B /* ViewController.m */,
+				2EF2B6F4211F1D930060074B /* Main.storyboard */,
+				2EF2B6F7211F1D940060074B /* Assets.xcassets */,
+				2EF2B6F9211F1D940060074B /* LaunchScreen.storyboard */,
+				2EF2B6FD211F1D940060074B /* main.m */,
+			);
+			path = "not used";
+			sourceTree = "<group>";
+		};
 		2EF2B6E2211F1D930060074B = {
 			isa = PBXGroup;
 			children = (
+				2EB5F3DB2124E646009EFA00 /* Default-568h@2x.png */,
 				2EF2B6ED211F1D930060074B /* KPIStateMachine */,
 				2EF2B706211F1D940060074B /* KPIStateMachineTests */,
 				2EF2B6EC211F1D930060074B /* Products */,
@@ -84,17 +102,10 @@
 		2EF2B6ED211F1D930060074B /* KPIStateMachine */ = {
 			isa = PBXGroup;
 			children = (
+				2EF2B6FC211F1D940060074B /* Info.plist */,
+				2EB5F3DA2124E268009EFA00 /* not used */,
 				2E26906B21216C99009DD510 /* KPIStates.h */,
 				2E26906C21216C99009DD510 /* KPIStates.m */,
-				2EF2B6EE211F1D930060074B /* AppDelegate.h */,
-				2EF2B6EF211F1D930060074B /* AppDelegate.m */,
-				2EF2B6F1211F1D930060074B /* ViewController.h */,
-				2EF2B6F2211F1D930060074B /* ViewController.m */,
-				2EF2B6F4211F1D930060074B /* Main.storyboard */,
-				2EF2B6F7211F1D940060074B /* Assets.xcassets */,
-				2EF2B6F9211F1D940060074B /* LaunchScreen.storyboard */,
-				2EF2B6FC211F1D940060074B /* Info.plist */,
-				2EF2B6FD211F1D940060074B /* main.m */,
 			);
 			path = KPIStateMachine;
 			sourceTree = "<group>";
@@ -189,6 +200,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2EF2B6FB211F1D940060074B /* LaunchScreen.storyboard in Resources */,
+				2EB5F3DC2124E646009EFA00 /* Default-568h@2x.png in Resources */,
 				2EF2B6F8211F1D940060074B /* Assets.xcassets in Resources */,
 				2EF2B6F6211F1D930060074B /* Main.storyboard in Resources */,
 			);
